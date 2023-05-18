@@ -1,0 +1,74 @@
+.home {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 3rem;
+    color: $black1;
+
+    h1 {
+        font-family: $font-title;
+        font-size: 5rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 33% 34% 33%;
+        height: 300px;
+
+
+
+        .home-books {
+            background: url('../../../public/books.png') center/cover;
+        }
+
+        .home-houses {
+            background: url('../../../public/houses.png') center/cover;
+        }
+
+        .home-characters {
+            background: url('../../../public/characters.png') center/cover;
+        }
+
+        .elem-home {
+            border: #747272 solid;
+            border-radius: 30px;
+            text-align: center;
+            padding: 0.5rem;
+
+            h2 {
+                padding: 20% 1rem 0 1rem;
+
+                span {
+                    font-size: 3rem;
+                }
+            }
+
+            a {
+                font-family: $font-title;
+                text-decoration: none;
+                color: $black1;
+                font-size: 2rem;
+
+                &:hover {
+                    color: $theme-dark;
+                }
+            }
+        }
+    }
+
+    .stats {
+        margin-bottom: 100px;
+
+        h2,
+        h3 {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+
+
+    }
+
+}

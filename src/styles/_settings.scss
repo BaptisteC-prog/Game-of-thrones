@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Oxygen:wght@300;400;700&display=swap');
+
+$font-title: 'Cinzel Decorative', cursive;
+$font-main: 'Oxygen', sans-serif;
+
+$hue: 95;
+
+$theme: hsl($hue, 50%, 50%);
+$theme-light: hsl($hue, 40%, 85%);
+$theme-dark: hsl($hue, 25%, 25%);
+
+$white1: hsl($hue, 33%, 95%);
+$black1: hsl($hue, 25%, 10%);
+
+$error: hsl(345, 75%, 25%);
+$success: hsl(135, 75%, 25%);
+
+$test: hsl(345, 50%, 50%);
+$test2: hsl(176, 10%, 20%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-main;
+    background-color: $white1;
+    color: $black1;
+
+    .underline {
+        //text-decoration: underline;
+        cursor: pointer;
+        color: $black1;
+
+        &:hover {
+            color: $theme;
+        }
+    }
+
+    input {
+        font-family: $font-main;
+        color: $black1;
+        font-size: 1.5rem;
+        margin: 0.5rem;
+        padding-left: 0.3rem;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: $black1;
+        cursor: pointer;
+
+        &:hover {
+            color: $theme;
+        }
+    }
+
+}

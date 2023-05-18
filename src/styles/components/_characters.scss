@@ -1,0 +1,76 @@
+.characters {
+    text-align: center;
+
+    h2 {
+        padding: 1rem;
+        font-family: $font-title;
+        font-size: 3rem;
+    }
+
+    .characters-table {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+
+        @media screen and (max-width: 850px) {
+            grid-template-columns: 25% 25% 25% 25%
+        }
+
+        @media screen and (max-width: 500px) {
+            grid-template-columns: 33% 34% 33%
+        }
+    }
+
+    ul {
+
+        li {
+            padding: 0.5rem;
+            list-style: none;
+            font-size: 1.5rem;
+
+            @media screen and (max-width: 850px) {
+                font-size: 1.25rem
+            }
+
+            @media screen and (max-width: 500px) {
+                font-size: 1rem
+            }
+
+        }
+
+        a {
+            text-decoration: none;
+            color: $black1;
+
+            &:hover {
+                color: $theme;
+            }
+        }
+    }
+
+    .pagination {
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    button {
+        height: 35px;
+        padding: 5px;
+        transform: translateY((-4px));
+    }
+
+    .searchInfo,
+    .searchVoid {
+        font-size: 1.5rem;
+    }
+
+    .searchVoid {
+        color: $error
+    }
+
+    .success {
+        color: $success
+    }
+
+}

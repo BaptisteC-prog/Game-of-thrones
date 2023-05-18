@@ -1,0 +1,52 @@
+.bookpage {
+    .bookcontainer {
+        margin-left: 30px;
+        margin-right: 30px;
+
+        h2,
+        h3,
+        h4 {
+            padding-top: 15px;
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                padding-top: 15px;
+            }
+
+            margin-bottom: 3rem;
+
+            a {
+                color: $black1;
+                text-decoration: none;
+
+                &:hover {
+                    color: $theme;
+                }
+            }
+        }
+
+        button {
+            background: $theme-light;
+            border: 0;
+            padding: .5rem 1rem 0.5rem 0.2rem;
+            border-radius: 15px;
+            margin-top: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        .book-characters,
+        .book-pov {
+            ul {
+                display: grid;
+                grid-template-columns: 20% 20% 20% 20% 20%;
+
+                @media screen and (max-width: 850px) {
+                    grid-template-columns: 25% 25% 25% 25%
+                }
+            }
+        }
+    }
+}

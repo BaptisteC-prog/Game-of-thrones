@@ -1,0 +1,30 @@
+.charapage {
+    .characontainer {
+        margin-left: 30px;
+        margin-right: 30px;
+
+        h1 {
+            color: $theme-dark;
+        }
+
+        h2,
+        h3,
+        h4 {
+            padding-top: 15px;
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                padding-top: 15px;
+            }
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+
+
+}

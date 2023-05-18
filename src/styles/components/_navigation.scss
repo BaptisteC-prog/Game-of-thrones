@@ -1,0 +1,39 @@
+.navigation {
+    background: $theme-light;
+
+    ul {
+        display: flex;
+        margin: 0px 0px 30px 30px;
+        list-style: none;
+
+        a {
+            text-decoration: none;
+            padding: 10px;
+
+            li {
+                font-size: 2rem;
+                color: $black1;
+                transition: 0.2s;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 1.5rem;
+                }
+
+                @media screen and (max-width: 500px) {
+                    font-size: 1rem;
+                }
+
+                &:hover {
+                    color: $theme;
+                }
+            }
+        }
+
+        .nav-active {
+            color: $theme;
+        }
+    }
+
+
+
+}

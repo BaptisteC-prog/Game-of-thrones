@@ -1,0 +1,31 @@
+.books {
+
+    .container {
+        padding: 30px;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            color: $black1;
+
+            h3 {
+                color: $theme-dark;
+            }
+
+            &:hover {
+                color: $theme;
+            }
+        }
+
+        li {
+            padding: 1rem;
+        }
+
+    }
+
+    h2 {
+        font-family: $font-title;
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+}
